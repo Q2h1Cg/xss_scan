@@ -28,15 +28,6 @@ chu@system:~/Dropbox/tools/xssscan$ tree
 对于单个url：
 ```
 chu@system:~/Dropbox/tools/xssscan$ ./scan.py.urllib2 "http://192.168.1.7/xss.php?x"
-[inCommonAttr]: http://192.168.1.7/xss.php?x=%22%20x55test%3Dx55
-[betweenCommonTag]: http://192.168.1.7/xss.php?x=%3Cx55test%3E
-[utf-7]: http://192.168.1.7/xss.php?x=%2B/v8%20%2BADw-x55test%2BAD4-
-[betweenCommonTag]: http://192.168.1.7/xss.php?x=--%3E%3Cx55test%3E
-[inCommonAttr]: http://192.168.1.7/xss.php?x=%22%3E%3Cx55test%3E
-[inCommonAttr]: http://192.168.1.7/xss.php?x=%27%3E%3Cx55test%3E
-[inCommonAttr]: http://192.168.1.7/xss.php?x=%3E%3Cx55test%3E
-[betweenScript]: http://192.168.1.7/xss.php?x=x55test%281%29
-
 或者：
 chu@system:~/Dropbox/tools/xssscan$ ./scan.py "http://192.168.1.7/xss.php?x" cookies.txt
 [utf-7] [+/v8 +ADw-x55test+AD4-]: http://192.168.1.7/xss.php?x=%2B/v8%20%2BADw-x55test%2BAD4-
