@@ -23,9 +23,9 @@ chu@system:~/Dropbox/tools/xssscan$ tree
 - scan.py.urllib2 是以前的版本，没有cookies 机制，采用urllib2 模块，scan.py 对其升级为requests 模块，并添加cookies。之所以保留scan.py.urllib2 是因为一些不需要cookies 的单个url 用它扫描方便些，批量扫描的话，还是建议使用scan.py。  
 - pyayloads中，BetweenScript 和 InScript 中的```x55test```误报较高，如不需要可自行去掉。（建议保留，这两个payload 有时会带来惊喜～）
 
-用法：  
-
-- 对于单个url：
+用法:
+ 
+对于单个url：
 ```
 chu@system:~/Dropbox/tools/xssscan$ ./scan.py.urllib2 "http://192.168.1.7/xss.php?x"
 [inCommonAttr]: http://192.168.1.7/xss.php?x=%22%20x55test%3Dx55
@@ -50,7 +50,7 @@ chu@system:~/Dropbox/tools/xssscan$ ./scan.py "http://192.168.1.7/xss.php?x" coo
 
 其中 cookies.txt 为你访问目标站点时的cookies。
 ```
-- 批量urls：
+批量urls：
 如果你抓取了一定数量的url，可以通过loadurls.py 进行批量测试：
 ```
 chu@system:~/Dropbox/tools/xssscan$ ./loadurls.py urls.txt cookies.txt 
